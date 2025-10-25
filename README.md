@@ -28,24 +28,19 @@ Plot the original and filtered image by using matplotlib.pyplot.
 End the program.
 
 ## Program:
-### Developed By   : HIRUTHIK SUDHAKAR
-### Register Number: 212223240054
+### Developed By   : LOGU R
+### Register Number: 212224230141
 </br>
 
 ### 1. Smoothing Filters
 
 i) Using Averaging Filter
 ```PYTHON
-
-# expt-5(a)-smoothing filters - Average, Weighted Average, Gaussian and Median
-
 import cv2
 import numpy as np
-from google.colab.patches import cv2_imshow
-
 
 # Load the image
-image = cv2.imread("/content/IMG-20230922-WA0002 (2).png")  # Replace with your actual image path
+image = cv2.imread("LOGU PASSPORT IMAGE.png")  # Replace with your actual image path
 if image is None:
     raise ValueError("Image not found. Check the file path.")
 
@@ -67,62 +62,36 @@ gaussian_blur = cv2.GaussianBlur(image, (5, 5), 0)
 median_blur = cv2.medianBlur(image, 5)  # Kernel size must be odd
 
 # ------------------ Display Results ------------------
-cv2_imshow(image)
-cv2_imshow(average_blur)
-cv2_imshow(weighted_blur)
-cv2_imshow(gaussian_blur)
-cv2_imshow(median_blur)
+cv2.imshow("Original", image)
+cv2.imshow("Averaging Filter", average_blur)
+cv2.imshow("Weighted Averaging Filter", weighted_blur)
+cv2.imshow("Gaussian Filter", gaussian_blur)
+cv2.imshow("Median Filter", median_blur)
+
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
 ```
 
 ### 2. Sharpening Filters
 ```PYTHON
-import cv2
-import numpy as np
 
-# Load the image
-image = cv2.imread('../Desktop/ex01/egimg2.png')  # Replace with your actual image path
-if image is None:
-    raise ValueError("Image not found. Check the file path.")
-
-# Convert to grayscale (for Laplacian Operator)
-gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-# ------------------ 1. Sharpening with Laplacian Linear Kernel ------------------
-# Define a sharpening kernel using Laplacian
-laplacian_kernel = np.array([[0, -1, 0],
-                             [-1, 5, -1],
-                             [0, -1, 0]], dtype=np.float32)
-
-# Apply the kernel using filter2D
-sharpened_kernel = cv2.filter2D(image, -1, laplacian_kernel)
-
-# ------------------ 2. Sharpening with Laplacian Operator ------------------
-laplacian = cv2.Laplacian(gray, cv2.CV_64F)
-laplacian = cv2.convertScaleAbs(laplacian)
-
-# Convert grayscale laplacian to 3-channel to add back to color image
-laplacian_color = cv2.merge([laplacian] * 3)
-
-# Add Laplacian details to the original image to enhance edges
-sharpened_operator = cv2.addWeighted(image, 1.0, laplacian_color, 1.0, 0)
-
-# ------------------ Display Results ------------------
-cv2.imshow("Original", image)
-cv2.imshow(" Laplacian linear kernel", sharpened_kernel)
-cv2.imshow(" Laplacian Operator", sharpened_operator)
-
-cv2.waitKey(0)
-cv2.destroyAllWindows()
 ```
 ## OUTPUT:
 ### 1. Smoothing Filters
 </br>
+<img width="512" height="656" alt="image" src="https://github.com/user-attachments/assets/c6068449-d53f-42d2-bd86-43654d793231" />
+
 
 i) Using Averaging Filter
 </br>
+<img width="515" height="654" alt="image" src="https://github.com/user-attachments/assets/752e6546-3c70-40b2-b887-026e88889e7c" />
+
+
 </br>
 </br>
-<img width="413" height="531" alt="image" src="https://github.com/user-attachments/assets/db53b60a-bded-4b36-b08e-3f3758e4fb00" />
+
 
 
 </br>
@@ -132,7 +101,8 @@ ii)Using Weighted Averaging Filter
 </br>
 </br>
 </br>
-<img width="413" height="531" alt="image" src="https://github.com/user-attachments/assets/53b0ab4c-771b-4af5-8bf6-03ec7d4add53" />
+
+<img width="514" height="664" alt="image" src="https://github.com/user-attachments/assets/2b9b0732-9376-4482-b264-eab35937c9a6" />
 
 </br>
 </br>
@@ -141,7 +111,7 @@ iii)Using Gaussian Filter
 </br>
 </br>
 </br>
-<img width="413" height="531" alt="image" src="https://github.com/user-attachments/assets/2e581607-8b27-4020-ad7f-45987cdb2f00" />
+<img width="512" height="657" alt="image" src="https://github.com/user-attachments/assets/0ff4ee0b-2272-4dae-906d-a6820f41d3a3" />
 
 </br>
 </br>
@@ -150,19 +120,21 @@ iv) Using Median Filter
 </br>
 </br>
 </br>
-<img width="413" height="531" alt="image" src="https://github.com/user-attachments/assets/2506c590-e70c-47b7-8100-845df5d6f4ba" />
+
+<img width="512" height="658" alt="image" src="https://github.com/user-attachments/assets/294937be-8eab-4e06-879d-38cccb86c0bb" />
 
 </br>
 </br>
 
 ### 2. Sharpening Filters
 </br>
+<img width="509" height="656" alt="image" src="https://github.com/user-attachments/assets/f39a9617-9973-452c-b7ec-c8a015686345" />
 
 i) Using Laplacian Kernal
 </br>
 </br>
 </br>
-<img width="413" height="531" alt="image" src="https://github.com/user-attachments/assets/c1d34df0-5034-4e4f-965a-c25c04427860" />
+<img width="516" height="653" alt="image" src="https://github.com/user-attachments/assets/7758aa91-0a30-49ef-8e5b-2947de2f91a4" />
 
 </br>
 </br>
@@ -171,7 +143,8 @@ ii) Using Laplacian Operator
 </br>
 </br>
 </br>
-<img width="413" height="531" alt="image" src="https://github.com/user-attachments/assets/48d0ff07-1cfb-4a00-ac8d-da6abe59b6f8" />
+
+<img width="509" height="662" alt="image" src="https://github.com/user-attachments/assets/7eb64106-5033-4f3c-b017-7dda06046bc6" />
 
 </br>
 </br>
