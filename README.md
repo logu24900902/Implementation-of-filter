@@ -81,12 +81,12 @@ cv2.destroyAllWindows()
 ## OUTPUT:
 ### 1. Smoothing Filters
 </br>
-<img width="512" height="656" alt="image" src="https://github.com/user-attachments/assets/c6068449-d53f-42d2-bd86-43654d793231" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/c6068449-d53f-42d2-bd86-43654d793231" />
 
 
 i) Using Averaging Filter
 </br>
-<img width="515" height="654" alt="image" src="https://github.com/user-attachments/assets/752e6546-3c70-40b2-b887-026e88889e7c" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/752e6546-3c70-40b2-b887-026e88889e7c" />
 
 
 </br>
@@ -102,7 +102,7 @@ ii)Using Weighted Averaging Filter
 </br>
 </br>
 
-<img width="514" height="664" alt="image" src="https://github.com/user-attachments/assets/2b9b0732-9376-4482-b264-eab35937c9a6" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/2b9b0732-9376-4482-b264-eab35937c9a6" />
 
 </br>
 </br>
@@ -111,7 +111,7 @@ iii)Using Gaussian Filter
 </br>
 </br>
 </br>
-<img width="512" height="657" alt="image" src="https://github.com/user-attachments/assets/0ff4ee0b-2272-4dae-906d-a6820f41d3a3" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/0ff4ee0b-2272-4dae-906d-a6820f41d3a3" />
 
 </br>
 </br>
@@ -121,20 +121,20 @@ iv) Using Median Filter
 </br>
 </br>
 
-<img width="512" height="658" alt="image" src="https://github.com/user-attachments/assets/294937be-8eab-4e06-879d-38cccb86c0bb" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/294937be-8eab-4e06-879d-38cccb86c0bb" />
 
 </br>
 </br>
 
 ### 2. Sharpening Filters
 </br>
-<img width="509" height="656" alt="image" src="https://github.com/user-attachments/assets/f39a9617-9973-452c-b7ec-c8a015686345" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/f39a9617-9973-452c-b7ec-c8a015686345" />
 
 i) Using Laplacian Kernal
 </br>
 </br>
 </br>
-<img width="516" height="653" alt="image" src="https://github.com/user-attachments/assets/7758aa91-0a30-49ef-8e5b-2947de2f91a4" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/7758aa91-0a30-49ef-8e5b-2947de2f91a4" />
 
 </br>
 </br>
@@ -144,7 +144,7 @@ ii) Using Laplacian Operator
 </br>
 </br>
 
-<img width="509" height="662" alt="image" src="https://github.com/user-attachments/assets/7eb64106-5033-4f3c-b017-7dda06046bc6" />
+<img width="200" height="300" alt="image" src="https://github.com/user-attachments/assets/7eb64106-5033-4f3c-b017-7dda06046bc6" />
 
 </br>
 </br>
